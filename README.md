@@ -24,5 +24,5 @@ To run and test the solution, follow these steps:
 ## File Structure
 
 - `index.html`: The main HTML file that contains the structure of the page.
-- `styles.css`: The CSS file that provides the styles for the page.
-- `script.js`: The JavaScript file that implements the drag and drop functionality.
+- `style.css`: The CSS file that provides the styles for the page.
+- `index.js`: The JavaScript file that implements the drag and drop functionality.
