@@ -1,3 +1,14 @@
+ <!-- This is a simple web page that allows users to drag and drop items between two containers.
+ The first container contains a text ,image and an icon,each of these items can be dragged 
+ and dropped on to the second container,and while dropping on to the second container a message 
+ will be displayed saying "item dropped successfully"
+ I have added a reset button to clear the second container and reset the first container to its original state.
+ You can test the responsiveness by resizing the browser window or using different devices. -->
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +22,7 @@
 
         <div class="container" id="container1">
             <h2>Container 1</h2>
-            <!-- <ul id="itemList">
-                <li class="item" draggable="true">Item 1</li>
-                <li class="item" draggable="true">Item 2</li>
-                <li class="item" draggable="true">Item 3</li>
-            </ul> -->
+         
             <div class="item" draggable="true">First Item</div>
   <div class="item" draggable="true">
     <img src="images/tree.jpg" alt="Second Item" width="200" height="auto">
@@ -29,9 +36,11 @@
             <h2>Container 2</h2>
         </div>
         
+        
     </div>
   <button id="resetBtn">Reset</button>
 
   <script src="index.js"></script>
 </body>
 </html>
+
