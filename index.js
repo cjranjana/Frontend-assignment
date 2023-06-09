@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const container2 = document.querySelector('.container:nth-child(2)');
     const resetBtn = document.getElementById('resetBtn');
   
-    // Add event listeners to each item
+    // Adding event listeners to each items
     items.forEach(function(item) {
       item.addEventListener('dragstart', dragStart);
       item.addEventListener('dragend', dragEnd);
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function dragStart() {
       draggedItem = this;
       setTimeout(() => (this.style.display = 'none'), 0);
+      this.classList.add('dragging')
     }
   
     function dragEnd() {
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
       items.forEach(item => document.querySelector('.container:first-child').appendChild(item));
     }
 
-  
+  //function to show the success message after dropping on to second container
     function showSuccessMessage(container) {
         const successMsg = document.createElement('div');
         successMsg.classList.add('success');
@@ -67,4 +68,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
       }
   });
+  
   
