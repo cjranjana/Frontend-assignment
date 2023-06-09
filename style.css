@@ -7,6 +7,7 @@
   .container-wrapper {
     display: flex;
     justify-content: center;
+  
   }
   
   .container {
@@ -27,7 +28,9 @@
   
   .item.dragging {
     opacity: 0.5;
-    background-color: #aaa;
+    transform: scale(0.9);
+    border: 2px dashed #0000;
+   
   }
   
   .success {
@@ -37,8 +40,10 @@
     margin-bottom: 10px;
   }
   
-  button {
+  button{
     margin-top: 10px;
+    background-color: olivedrab;
+    padding: 10px 10px;
   }
   
   /* Responsive Styles */
@@ -59,4 +64,5 @@
       margin: 10px;
     }
   }
+  
   
